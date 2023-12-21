@@ -12,7 +12,7 @@ const SearchedMovies = () => {
     useEffect(() => {
         const fetchMovies = async () => {
             try{
-                const response = await axios.post('http://localhost:5000/search', { searchTerm });
+                const response = await axios.post('https://movie-land-backend.onrender.com/search', { searchTerm });
                 setMovies(response.data);
             } catch (error) {
                 console.log('Error Searching', error);
