@@ -11,7 +11,7 @@ const HomeContainer = () => {
     useEffect(() => {
         const fetchMovies = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/tmdb');
+                const response = await axios.get('https://movie-land-backend.onrender.com/tmdb');
                 setMovies(response.data);
             } catch (error) {
                 console.error('Error fetching movies:', error);

@@ -11,7 +11,7 @@ const TopRatedPage = () => {
     useEffect(() => {
         const fetchMovies = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/top_rated');
+                const response = await axios.get('https://movie-land-backend.onrender.com/top_rated');
                 setTopRatedMovies(response.data);
             } catch (error) {
                 console.error('Error fetching movies:', error);

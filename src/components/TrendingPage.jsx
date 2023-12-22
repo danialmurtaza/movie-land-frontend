@@ -11,7 +11,7 @@ const TrendingPage = () => {
     useEffect(() => {
         const fetchMovies = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/trending');
+                const response = await axios.get('https://movie-land-backend.onrender.com/trending');
                 setTrendingMovies(response.data);
             } catch (error) {
                 console.error('Error fetching movies:', error);
