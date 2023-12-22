@@ -19,7 +19,7 @@ const SearchedMovies = () => {
             }
         };
         fetchMovies();
-    }, []);
+    }, [searchTerm]);
 
     return(
         <>
