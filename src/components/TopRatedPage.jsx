@@ -7,7 +7,6 @@ import Loader from "./Loader";
 const TopRatedPage = () => {
   const [topRatedMovies, setTopRatedMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
   // const isLoading = !topRatedMovies || topRatedMovies.length === 0;
 
   useEffect(() => {
